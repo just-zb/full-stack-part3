@@ -6,7 +6,9 @@ import Person from './models/person.js'
 
 
 const app = express()
+// 请求体转为json的中间件
 app.use(express.json())
+//跨域处理中间件
 app.use(cors())
 
 // log requests
